@@ -86,6 +86,7 @@ function createPieChart(startingAmount, periodicDeposits, interest) {
         type: 'pie',
         data: data,
         options: {
+ 
             tooltips: {
                 callbacks: {
                     label: function(tooltipItem, data) {
