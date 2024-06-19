@@ -8,7 +8,7 @@
 </head>
 <body>
     <section id="Calculator">
-        <form class="table-form">
+        <form class="table-form" id="calculatorForm">
             <div class="form-row">
                 <label for="NumOfPeriods">N (# of periods)</label>
                 <input type="text" id="NumOfPeriods" name="NumOfPeriods">
@@ -18,8 +18,8 @@
                 <input type="text" id="InterestPerYear" name="InterestPerYear">
             </div>
             <div class="form-row">
-                <label for="PresentValue">PV (Present Value)</label>
-                <input type="text" id="PresentValue" name="PresentValue">
+                <label for="PresentValueInput">PV (Present Value)</label>
+                <input type="text" id="PresentValueInput" name="PresentValueInput">
             </div>
             <div class="form-row">
                 <label for="PeriodicPayment">PMT (Periodic Payment)</label>
@@ -31,5 +31,29 @@
             </div>
         </form>
     </section>
+
+    <section id="Results">
+        <h2>Results</h2>
+        <table>
+            <tr>
+                <td><label for="FutureValue">FV =</label></td>
+                <td><span id="FutureValue"></span></td>
+            </tr>
+            <tr>
+                <td><label for="PresentValue">Present Value = </label></td>
+                <td><span id="PresentValue"></span></td>
+            </tr>
+            <tr>
+                <td><label for="SumOfPayments">Sum of all periodic payments</label></td>
+                <td><span id="SumOfPayments"></span></td>
+            </tr>
+            <tr>
+                <td><label for="TotalInterest">Total Interest</label></td>
+                <td><span id="TotalInterest"></span></td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="functions.js"></script>
 </body>
 </html>
